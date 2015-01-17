@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication1.WebForm1" %>
 
+<%@ Register src="UserControls/TestControl.ascx" tagname="TestControl" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,6 +13,7 @@
     <div>
     
     </div>
+        <uc1:TestControl ID="TestControl1" runat="server" />
     </form>
 </body>
 </html>
